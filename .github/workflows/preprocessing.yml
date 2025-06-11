@@ -17,7 +17,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.13.12'  # Gunakan versi stabil yang didukung MLflow
+        python-version: '3.13.2'  # Gunakan versi stabil yang didukung MLflow
 
     - name: Install dependencies
       run: |

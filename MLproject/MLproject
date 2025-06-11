@@ -1,0 +1,13 @@
+name: sentiment-svm
+
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    parameters:
+      C: {type: float, default: 1.0}
+      gamma: {type: str, default: "scale"}
+      kernel: {type: str, default: "rbf"}
+      data_path: {type: str, default: "naturalisasi_dataset_cleaned.csv"}
+    command: >
+      python modelling.py --C {C} --gamma {gamma} --kernel {kernel} --data_path {data_path}

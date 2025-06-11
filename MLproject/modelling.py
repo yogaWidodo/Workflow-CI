@@ -20,7 +20,7 @@ def main(C, gamma, kernel, data_path):
     vectorizer = TfidfVectorizer()
     X_train_tfidf = vectorizer.fit_transform(X_train)
     X_test_tfidf = vectorizer.transform(X_test)
-    input_example = X_train.iloc[[0]]
+    input_example = X_train.iloc[[0]].to_frame().T
 
 
     with mlflow.start_run():

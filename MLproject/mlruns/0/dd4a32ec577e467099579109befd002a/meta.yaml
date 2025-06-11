@@ -1,0 +1,15 @@
+artifact_uri: file:///home/runner/work/Workflow-CI/Workflow-CI/MLproject/mlruns/0/dd4a32ec577e467099579109befd002a/artifacts
+end_time: 1749622850367
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: dd4a32ec577e467099579109befd002a
+run_name: tasteful-deer-536
+run_uuid: dd4a32ec577e467099579109befd002a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1749622842484
+status: 3
+tags: []
+user_id: runner

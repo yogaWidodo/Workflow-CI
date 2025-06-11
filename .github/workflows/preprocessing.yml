@@ -35,3 +35,14 @@ jobs:
       with:
         name: mlruns
         path: MLproject/mlruns
+
+    - name: Save mlruns to repo
+      if: success()
+      run: |
+        git config --global user.name yogaWidodo
+        git config --global user.email chaintroopers88@gmail.com
+        git fetch origin main
+        git checkout main
+        git add MLproject/mlruns/
+        git commit -m "Save mlruns from CI run [skip ci]" || echo "Nothing to commit"
+        git push https://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@github.com/Workflow-CI.git main
